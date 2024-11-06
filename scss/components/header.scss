@@ -1,0 +1,54 @@
+.header {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   padding-top: 16px;
+   @media screen and (min-width:1024px) {
+       background-color: #ffffff85;
+       
+   }
+   &__block {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: 30px;
+       
+       @media screen and (min-width:1024px) {
+           height: 116px;
+           
+       }
+    }
+    &__header__logoImg{
+
+    }
+    &__menu {
+       display: none;
+    }
+    
+    &__social-links {
+    display: none;
+    }
+    @media screen and (min-width: 1024px) {
+        &__menu {
+           display: block;
+        }
+        
+        &__social-links {
+        display: block;
+        }
+        
+    }
+}
+.mobile-btn{
+    display: block;
+}
+@media screen and (min-width: 1024px) {
+    .mobile-btn{
+        display: none;
+    }
+    
+}
+
+
+

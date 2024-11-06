@@ -1,0 +1,20 @@
+.social-links {
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+        stroke: $social-link-color;
+        &:hover{
+            stroke: $social-link-hover-color;
+        }
+
+    }
+}

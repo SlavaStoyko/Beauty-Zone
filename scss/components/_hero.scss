@@ -1,0 +1,80 @@
+.hero {
+    background-image: url("../images/hero/mobilehero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+    &__block {
+        padding-top: 71px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        @media screen and (min-width:1024px) {
+            padding-top: 126px;
+            
+        }
+    }
+
+    &__infoClinics {
+    }
+
+    &__title {
+        font-family: Play;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $title-font-sub-color;
+        @media screen and (min-width:1024px) {
+            line-height: 214px;
+            
+        }
+    }
+    
+    &__callbackInfo {
+        width: 238px;
+        justify-items: center;
+        &__button{
+            width: inherit;
+            margin: 16px 0;
+            &:hover{
+                color: $main-font-color;
+                background-color: transparent;
+                border: 1px solid $font-hover-color;
+                cursor: pointer;
+            }
+            @media screen and (max-width:1024px) {
+                width: 186px;
+            }
+        }
+        &__text {
+            font-size: 0.75rem;
+            text-align: center;
+        }
+        
+    }
+    @media screen and (min-width: 520px) {
+        &__title {
+            font-size: 3.4rem;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        background-image: url("../images/hero/hero.svg");
+        background-position: center;
+        height: 100vh;
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__title {
+            width: 529px;
+            line-height: 214px;
+            font-size: 8.8rem;
+        }
+
+    }
+}
+
+

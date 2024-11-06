@@ -1,0 +1,38 @@
+.mobile-btn {
+  display: block;
+
+  
+}
+.burger {
+    position: relative;
+     width: 20px;
+    height: 14px;
+   
+    &::before{
+        content: "";
+        width: 16px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $burgerButton;
+    }
+    & span{
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $burgerButton;
+    }
+    &::after{
+        content: "";
+        width: 14px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $burgerButton;
+    }
+    @media (min-width:1024px){
+        display: none;
+      }
+}

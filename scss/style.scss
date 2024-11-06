@@ -1,0 +1,57 @@
+@import "./scss-utiles/variables";
+@import "./base/typography";
+@import "./base/reset";
+
+@import "./components/mobile-btn";
+@import "./components/mobileMenu";
+@import "./components/header";
+@import "./components/social-links.scss";
+@import "./components/logoImg";
+@import "./components/menu";
+
+
+@import "./components/hero";
+@import "./components/_callback";
+@import "./components/about";
+@import "./components/whyWe";
+@import "./components/procedures";
+@import "./components/mapLocation";
+@import "./components/footer";
+
+.backgroundFon{
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/backgroundLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -380px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        
+        transform: scaleY(0.7);
+    
+    }
+    @media screen and (min-width: 1024px) {
+        &::before{
+        
+            background-image: url(../images/backgroundLine.png);
+        }
+}
+    /* &::after{
+        content: "";
+        background-image: url("../images/backgroundLine.png");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -240px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    } */
+}

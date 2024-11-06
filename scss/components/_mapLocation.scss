@@ -1,0 +1,120 @@
+.mapLocation {
+    &__block {
+        padding: 48px 0px 94px 0px;
+    }
+
+    &__title {
+        
+        margin-bottom: 48px;
+        text-align: center;
+        
+        & span{
+            color:$font-hover-color;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        
+    }
+    @media screen and (max-width:1024px) {
+        &__content {
+            flex-direction: column;
+            
+        }
+        &__block {
+            padding: 48px 0px 0px 0px;
+        }
+    }
+}
+
+.map {
+  flex-grow: 1;
+   width: 100%;
+   height: 490px;
+    
+    align-self: flex-start;
+    & iframe{
+        width: inherit;
+        height: inherit;
+        border-radius: 15px;
+       
+        
+    }
+   
+    @media screen and (min-width:1024px) {
+        order: 1;
+    }
+}
+.conection-form {
+   /*  background-image: url("../images/location/backgrounLine.svg"); */
+    padding: 48px 75px;
+    background-color: $main-font-color;
+    border-radius: 15px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    @media screen and (max-width: 1024px) {
+        padding: 48px 24px;
+    }
+    & #titleForm{
+        align-self: center;
+       
+        width: 250px;
+        height: 60px;
+        color:#FFF;
+        text-align: center;
+        & span{
+            color: $font-hover-color;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 330px; 
+        }
+    }
+    
+    & form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        & input{
+            color: #FFF;
+            width: 100%;
+            margin: 8px 0;
+            padding: 18px 33px;
+            border-radius: 25px;
+            background-color: inherit;
+            border: 1px solid $input-form-color;
+
+           
+        }
+    }
+    & p{
+        text-align: center;
+        color: $input-form-color;
+    }
+    @media screen and (min-width:1024px) {
+        order: 2;
+    }
+}
+.callback :hover, button[type="submit"]{
+    color:#FFF;
+}
+
+.hero {
+
+    &__callbackInfo {
+    }
+}
+.valid{
+    //box-sizing: 0px 5px 15px 5px green;
+    background-color: #0080006f !important;
+}
+.invalid{
+    background-color:  #ff00006f !important;
+}
+

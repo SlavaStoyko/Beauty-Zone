@@ -1,0 +1,155 @@
+.about {
+    margin: 136px 0px 176px 0;
+    position: relative;
+    
+    &__block {
+        
+        @media screen and (max-width:1024px) {
+            &::after{
+                display: block;
+                width: 55px;
+                height: 55px;
+                content: " ";
+                background-image: url("../images/about/dekor/Star1.png");
+                position: absolute;
+                bottom: 0%;
+                right: 0%;
+        
+            }
+        }
+    }
+
+    &__text {
+        max-width: 709px;
+    }
+    &__text *{
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-size: 40px;
+        & span{
+            color:$font-hover-color
+        }
+    }
+
+    &__images {
+        display: none;
+    }
+
+    &__item {
+        &::after,&::before{
+            
+            content: " ";
+            position: absolute;
+        }
+        & img{
+            border-radius: 50%;
+        }
+    }
+
+    &__item--1 {
+        &::before{
+            width: 35px;
+            height: 35px;
+
+            background-image: url(../images/about/dekor/Star2.png);
+   
+            top: 8%;
+            right: -5%;
+        }
+
+    }
+    
+    &__item--2 {
+       align-self: flex-end;
+       
+       &::after{
+        width: 15px;
+        height: 15px;
+        background-image: url(../images/about/dekor/Star3.png);
+        top: 40%;
+        right: 0%;
+
+    }
+    }
+
+    @media screen and (min-width:1024px) {
+        &__block {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__text {
+            max-width: 709px;
+        }
+        &__text *{
+            margin-bottom: 40px;
+        }
+    
+        &__title {
+            font-size: 64px;
+            & span{
+                color:$font-hover-color
+            }
+        }
+    
+        &__images {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    
+        &__item {
+            &::after,&::before{
+                
+                content: " ";
+                position: absolute;
+            }
+            & img{
+                border-radius: 50%;
+            }
+        }
+    
+        &__item--1 {
+            &::before{
+                width: 35px;
+                height: 35px;
+    
+                background-image: url(../images/about/dekor/Star2.png);
+       
+                top: 8%;
+                right: -5%;
+            }
+    
+        }
+        
+        &__item--2 {
+           align-self: flex-end;
+           &::before{
+            display: block;
+            width: 55px;
+            height: 55px;
+            content: " ";
+            background-image: url("../images/about/dekor/Star1.png");
+            position: absolute;
+            top: 50%;
+            
+    
+        }
+           &::after{
+            width: 15px;
+            height: 15px;
+            background-image: url(../images/about/dekor/Star3.png);
+            top: 40%;
+            right: 0%;
+    
+        }
+        }
+        
+    }
+}
+
+
+

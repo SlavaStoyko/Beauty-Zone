@@ -1,0 +1,100 @@
+
+.footer {
+    position: relative;
+    background-color: $main-font-color;
+    color: #fff;
+    
+    & li{
+        padding-bottom: 16px;
+    }
+		&__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 56px 0;
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+                
+        }
+		}
+}
+.footer {
+
+		&__menu {
+            .menu {
+
+                &__list {
+                    flex-direction: column;
+                    gap: 0;
+                }
+        
+                &__item {
+                }
+        
+                &__link {
+                }
+        }
+		}
+
+		&__contacts {
+            max-width: 250px;
+            .social-links {
+
+                &__list {
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and (min-width: 1024px) {
+                        justify-content: space-around;
+                        align-items: flex-start;
+                }
+                }
+        
+                &__item {
+                }
+        
+                &__link {
+
+                    & svg{
+                        stroke: #fff;
+                        height: 30px;
+                    }
+                }
+        }
+       
+        @media screen and (min-width: 1024px) {
+            
+            & .onMobile{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            
+            & .onDesktop{
+                display: none;
+            }
+        }
+    }
+    
+    &__politic {
+        display: none;
+        @media screen and (min-width: 1024px) {
+                display: block
+        }
+		}
+}
+@media screen and (min-width: 1024px) {
+    .footer::after{
+        content: "";
+        background-image: url("../images/footer/PhotoRoom1.png");
+background-repeat: no-repeat;
+position: absolute;
+right: 0px;
+bottom: 0px;
+width: 249px;
+height: 150px;
+    }  
+}
+

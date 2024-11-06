@@ -1,0 +1,18 @@
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 56px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        &:hover{
+            color: $font-hover-color;
+        }
+    }
+}
