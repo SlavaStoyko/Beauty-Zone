@@ -1,14 +1,23 @@
 export const openMassage = (params) => {
-    return params.forEach((element) => {
+       params.forEach((element) => {
       element.addEventListener("mouseover", () => {
-      element.children[0].children[0].classList.add("onActive");
+        cleaNer();
+      element.children[0].classList.add("onActive");
       });
     });
-  };
-  export const closeMassage = (params) => {
-    return params.forEach((element) => {
-      element.addEventListener("mouseout", () => {
-        element.children[0].children[0].classList.remove("onActive");
+    params.forEach((element) => {
+      element.addEventListener("touchstart", (e) => {
+        e.view.onclick = (event) => {
+          event.preventDefault();
+          cleaNer();
+          e.target.children[0].classList.add("onActive");
+        };
       });
     });
+    function cleaNer() {
+      params.forEach((element) => {
+        element.childNodes[0].classList.remove("onActive");
+      });
+    }
   };
+  
