@@ -509,8 +509,8 @@ h3 {
 .procedures__block {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 .procedures__title {
   font-size: 48px;
@@ -534,8 +534,8 @@ h3 {
 
 .slider {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   gap: 32px;
 }
 .slider__nav {
@@ -557,10 +557,10 @@ h3 {
 .slider__content {
   display: flex;
   justify-content: space-between;
-  /*  align-items: center; */
+  align-items: center;
   gap: 16px;
 }
-.slider__content li {
+.slider__content .swiper-slide {
   justify-items: center;
 }
 .slider__item {
