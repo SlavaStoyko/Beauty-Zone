@@ -509,8 +509,8 @@ h3 {
 .procedures__block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 .procedures__title {
   font-size: 48px;
@@ -534,8 +534,8 @@ h3 {
 
 .slider {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   gap: 32px;
 }
 .slider__nav {
@@ -557,11 +557,10 @@ h3 {
 .slider__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*  align-items: center; */
   gap: 16px;
-  /*flex-grow: 1; */
 }
-.slider__content > li {
+.slider__content li {
   justify-items: center;
 }
 .slider__item {
@@ -569,7 +568,6 @@ h3 {
   color: #FFF;
   width: 344px;
   height: 456px;
-  /*  background-color: $main-font-color; */
   border-bottom-left-radius: 25%;
   border-top-right-radius: 25%;
   display: flex;
@@ -597,8 +595,6 @@ h3 {
 .slider__item a p {
   transform: translateY(100px);
   transition: transform 0.4s ease;
-  /*  transition: visibility 0.4s 0.5s ease;
-   visibility: hidden;  */
 }
 .slider__item a p.onActive {
   transform: translateY(-60px);
@@ -616,9 +612,6 @@ h3 {
   width: 1200px;
 }
 
-/* .swiper-button-prev,.swiper-button-next{
-    position: static;
-} */
 .swiper-button-prev::after, .swiper-button-next::after {
   display: none !important;
 }

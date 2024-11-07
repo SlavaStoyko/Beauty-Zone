@@ -3,8 +3,8 @@
     &__block {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
     }
 
     &__title {
@@ -36,8 +36,8 @@
 
 .slider {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     gap: 32px;
     &__nav {
         display: flex;
@@ -60,10 +60,10 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+       /*  align-items: center; */
          gap: 16px;
-        /*flex-grow: 1; */
-        &>li{
+        
+        & li{
             justify-items: center;
         }
     }
@@ -74,7 +74,6 @@
         color: $button-font-color;
         width: 344px;
         height: 456px;
-       /*  background-color: $main-font-color; */
         border-bottom-left-radius: 25%;
         border-top-right-radius: 25%;
         display: flex;
@@ -102,8 +101,7 @@
             & p{
                 transform: translateY(100px);
                 transition: transform 0.4s ease;
-               /*  transition: visibility 0.4s 0.5s ease;
-                visibility: hidden;  */
+               
             }
             & p.onActive{
                 transform: translateY(-60px);
@@ -126,9 +124,7 @@
         width: 1200px;
     
 }
-/* .swiper-button-prev,.swiper-button-next{
-    position: static;
-} */
+
 .swiper-button-prev::after,.swiper-button-next::after{
     display: none !important;
 }
